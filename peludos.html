@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clínica Veterinaria Peludos</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Darumadrop+One&family=Freckle+Face&display=swap');
+        * { margin: 0;
+            box-sizing: border-box;
+            
+        }
+        nav{
+            font-family: "Freckle Face", serif;
+            background-color:#c2ed65;
+            display: flex;
+            justify-content: space-around;
+            padding: 10px;
+            
+        }
+        nav a {
+            color: black;
+            text-decoration: none;
+
+        }
+        nav a:hover {
+            color:#957F72;
+        }
+        header {
+            font-family: "Freckle Face", serif;
+            background-image: url(images/fondo.jpg);
+            height: 300px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover;
+        }
+        #caja-central {
+            text-align: center;
+
+        }
+        header h1 {
+            color: #c2ed65;
+            text-shadow: 3px 3px 8px black;
+            font-size: 5em;
+        }
+        header h2 {
+            font-size: 3em;
+        }
+        #contenedor-quienes{
+            display: flex;
+            padding: 20px;
+        }
+        #contenedor-quienes #der {
+            width: 50%;
+
+        }
+        #contenedor-quienes #izq {
+            width: 50%;
+            text-align: center;
+
+        }
+        #contenedor-quienes #izq img{
+            width: 80%;  
+
+        }
+        .titulo {
+            font-family: "Freckle Face", serif;
+            color: black;
+            text-align: center;
+        }
+        section {
+            font-family: Arial, Helvetica, sans-serif
+        }
+        section#quienes-somos {
+            padding: 20px;
+        }
+        section#clientes {
+            background-color: antiquewhite;
+            padding: 20px;
+
+
+        }
+        #contenedor-clientes {
+            background-color: #F4F4F2;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 11px;
+        }
+        .cliente {
+            width: 30%;
+            
+
+        }
+        .cliente img {
+            width: 50%;
+            border-radius: 250px;
+            
+        }
+        footer {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #C2ED65;
+            color: black;
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            
+        }
+        footer #caja-superior {
+            width: 100%;
+            text-align: center;
+            border-bottom: 2px solid white;
+            padding: 10px;
+            
+
+        }
+        footer .caja-inferior {
+            width: 33%;
+            padding: 10px;
+            text-align: center;
+            
+        }
+        footer h2 {
+            font-family: "Freckle Face", serif;
+        }
+
+    </style>
+</head>
+<body>
+  
+    <header>
+        <div id="caja-central">
+        <h1>Clínica Veterinaria</h1>
+        <h2>Peludos</h2>
+        </div>   
+    </header>
+    <nav>
+        <a href="#">Inicio</a>
+        <a href="#">Quienes Somos</a>
+        <a href="#">Donde estamos</a>
+        <a href="#">Contacto</a>
+    </nav>
+    <section id="quienes-somos">
+        <h1 class="titulo"> Quienes Somos</h1>
+        <div id="contenedor-quienes">
+            <div id="izq">
+               
+                <img src="images/chicas.jpeg" alt="equipo veterinario">
+                
+
+            </div>
+            <div id="der">
+                <h1>El mejor equipo profesional para tus mascotas</h1>
+                <br>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita modi tenetur fugit laborum. Assumenda aliquam, animi explicabo commodi harum voluptatem, neque saepe ipsam optio ad, officiis eos nihil magni? Earum.
+                Soluta necessitatibus praesentium rerum eligendi, ratione ab maiores quidem minima obcaecati consequatur, sequi, aut nobis cumque veritatis velit harum debitis tempore facilis at officiis dolore dolor deleniti nisi a? Tenetur.Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita modi tenetur fugit laborum. Assumenda aliquam, animi explicabo commodi harum voluptatem, neque saepe ipsam optio ad, officiis eos nihil magni? Earum.
+                Soluta necessitatibus praesentium rerum eligendi, ratione ab maiores quidem minima obcaecati consequatur, sequi, aut nobis cumque veritatis velit harum debitis tempore facilis at officiis dolore dolor deleniti nisi a? Tenetur</p>
+
+            </div>
+        </div>
+    </section>
+    <section id="clientes">
+        <h1 class="titulo">Más de 400 clientes satisfechos</h1>
+        <div id="contenedor-clientes">
+            <div class="cliente">
+                <img src="images/chicagato.jpeg"  alt="chica con gato">
+                <p>"Siempre me han dado mucha seguridad y 
+                    <br>han tratado a mi pequeño genial"</p>
+            </div>
+            <div class="cliente">
+                <img src="images/chicoperro.jpeg" alt="chico con perrito">
+                <p>"No se quien los quiere más,si mi pequeña Sasha o yo"</p>
+            </div>
+            <div class="cliente">
+                <img src="images/chicapajaro.jpeg" alt="chica con pájaro">
+                <p>"Sin duda la mejor clínica veterinaria en toda Ciudad Real"</p>
+            </div>
+
+        </div>
+    </section>
+    <footer>
+        <p id="caja-superior">¿Tu peludo tiene algún problema?  No te preocupes. Estamos abiertos 24h los 7 días de la semana.</p>
+        <div class="caja-inferior">
+            <h2>Enlaces</h2>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+            <a href="#">Instagram</a>
+        </div>
+        <div class="caja-inferior">
+            <h2>Estamos en</h2>
+            <p>Calle Carrera 63</p>
+            <p>13240 La Solana - Ciudad Real</p>
+        </div>
+        <div class="caja-inferior">
+            <h2>E-mail</h2>
+            <p>peludos@gmail.com</p>
+        </div>
+    </footer>
+</body>
+</html>
